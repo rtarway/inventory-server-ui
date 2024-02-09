@@ -1,0 +1,34 @@
+{
+    "storetasks": [
+        {
+            "id": "inventory-availability",
+            "name": "inventory-availability",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": true
+        },
+        {
+            "id": "inventory-count",
+            "name": "inventory-count",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": false
+        },
+        {
+            "id": "move-inventory",
+            "name": "move-inventory",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": true
+        },
+        {
+            "id": "receive-inventory",
+            "name": "receive-inventory",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": true
+        },
+        {
+            "id": "store-fulfillment",
+            "name": "store-fulfillment",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": false
+        }
+    ]
+}

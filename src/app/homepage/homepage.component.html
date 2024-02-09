@@ -1,0 +1,21 @@
+<section>
+    <form>
+        <input type="text" placeholder="Filter by name" #filter>
+        <button class="primary" type="button" (click)="filterResults(filter.value)">
+        Search
+        </button>
+      </form>
+</section>
+<section class="results">
+    
+    <!-- <app-inventory-availability>Check Inventory Availability</app-inventory-availability>
+    <app-receive-inventory>Receive Shipments </app-receive-inventory>
+    <app-move-inventory>Move Inventory</app-move-inventory>
+    <app-store-fulfillment>Store Fulfillment Tasks</app-store-fulfillment>
+    <app-inventory-count>Count</app-inventory-count> -->
+
+    <app-store-task-logo *ngFor="let storetask of filteredStoreTaskList" [storetask]="storetask">
+    </app-store-task-logo> 
+     
+
+</section>

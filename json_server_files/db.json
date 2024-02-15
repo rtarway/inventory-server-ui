@@ -1,16 +1,10 @@
 {
     "storetasks": [
         {
-            "id": "inventory-availability",
-            "name": "inventory-availability",
+            "id": "store-inventory",
+            "name": "store-inventory",
             "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
             "available": true
-        },
-        {
-            "id": "inventory-count",
-            "name": "inventory-count",
-            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-            "available": false
         },
         {
             "id": "move-inventory",
@@ -19,10 +13,22 @@
             "available": true
         },
         {
+            "id": "inventory-availability",
+            "name": "inventory-availability",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": false
+        },
+        {
+            "id": "inventory-count",
+            "name": "inventory-count",
+            "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+            "available": false
+        },
+        {
             "id": "receive-inventory",
             "name": "receive-inventory",
             "taskLogo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-            "available": true
+            "available": false
         },
         {
             "id": "store-fulfillment",

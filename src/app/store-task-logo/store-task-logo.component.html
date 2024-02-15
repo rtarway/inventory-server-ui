@@ -1,10 +1,6 @@
-<section class="listing">
-    <img class="listing-photo" [src]="storetask.taskLogo" alt="{{ storetask.name }}">
-    <h2 class="listing-heading">{{ storetask.name }}</h2>
-
-    <div *ngIf="storetask.available as value; else elseBlock">
-        <a  [routerLink]="['/details', storetask.id]">Go to {{ storetask.name }}</a>
-    </div>
-   <ng-template #elseBlock>In pipeline..</ng-template>
-
-</section>
+<div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100" [routerLink]="['/details', storetask.id]">
+        <img class="img-fluid img-thumbnail" [src]="storetask.taskLogo" alt="{{ storetask.name }}" width="10%" height="10%">
+    </a>
+    <br>
+</div>

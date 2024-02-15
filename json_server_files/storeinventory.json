@@ -1,0 +1,26 @@
+{
+        "storeinventory": [
+            {
+                "store_inventory_id": "1",
+                "store": "store001",
+                "product": "SKU01",
+                "store_lcoation_id": "A1B1L1_1",
+                "quantity": 10
+            },
+            {
+                "store_inventory_id": "2",
+                "store": "store001",
+                "product": "SKU01",
+                "store_lcoation_id": "A1B1L1_2",
+                "quantity": 10
+            },
+            {
+                "store_inventory_id": "3",
+                "store": "store001",
+                "product": "SKU01",
+                "store_lcoation_id": "A1B1L1_3",
+                "quantity": 10
+            }
+
+        ]   
+} 

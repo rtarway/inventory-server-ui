@@ -1,20 +1,27 @@
 import { Injectable } from '@angular/core';
 import { StoreTasks } from './store-tasks';
+import { environment } from './../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StoreTasksService {
 
-  url='http://localhost:3000/storetasks';
+  store_tasks_url='http://localhost:3000/storetasks';
+
+  constructor(){
+    this.store_tasks_url = environment.store_tasks_url;
+  }
+
+
 
   async getAllStoreTasks(): Promise<StoreTasks[]> {
-    const data = await fetch(this.url);
+    const data = await fetch(this.store_tasks_url);
     return await data.json() ?? [];
   }
   
   async getStoreTaskByName(name: String): Promise<StoreTasks | undefined> {
-    const data = await fetch(`${this.url}/${name}`);
+    const data = await fetch(`${this.store_tasks_url}/${name}`);
     return await data.json() ?? {};
   }
   

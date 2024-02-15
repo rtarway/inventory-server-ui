@@ -1,1 +1,38 @@
-<p>move-inventory works!</p>
+
+<form #moveForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+        <label for="SKU" class="col-sm-1 col-form-label" >SKU</label>
+        <div class="col-sm-10">
+            <input class="form-control w-25" type="text" id="SKU" name="SKU" [(ngModel)]="SKU" readonly required >
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 col-form-label" for="storeId">Store</label>
+        <div class="col-sm-10">
+            <input class="form-control mb-4 w-25"  type="text" id="storeId" name="storeId" [(ngModel)]="storeId" readonly required >
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 col-form-label" for="FromLocation">From</label>
+        <div class="col-sm-10">
+            <input class="form-control mb-4 w-25" type="text" id="fromLocationId" name="fromLocationId" [(ngModel)]="fromLocationId" readonly required >
+        </div>    
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 col-form-label" for="toLocation">To</label>
+        <div class="col-sm-10">
+            <input class="form-control mb-4 w-25" type="text" id="toLocationId" name="toLocationId" [(ngModel)]="toLocationId"  required >
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 col-form-label" for="quanityt">Quantity</label>
+        <div class="col-sm-10">
+            <input class="form-control mb-4 w-25" type="text" id="quantity" name="quantity" [(ngModel)]="quantity"  required >
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+    <button type="submit" [disabled]="!moveForm.valid" class="btn btn-info col-2" >Submit</button>
+    </div>
+</div>
+</form>

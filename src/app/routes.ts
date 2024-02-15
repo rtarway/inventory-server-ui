@@ -5,6 +5,7 @@ import { MoveInventoryComponent } from './move-inventory/move-inventory.componen
 import { StoreFulfillmentComponent } from './store-fulfillment/store-fulfillment.component';
 import { InventoryCountComponent } from './inventory-count/inventory-count.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { StoreIventoryComponent } from './store-iventory/store-iventory.component';
 
 
 export const routeConfig: Routes = [
@@ -29,6 +30,11 @@ export const routeConfig: Routes = [
         path: 'details/move-inventory',
         component: MoveInventoryComponent,
         title: 'Putaway/Move Inventory'
+    },
+    {
+        path: 'details/store-inventory',
+        component: StoreIventoryComponent,
+        title: 'Store Inventory'
     },
     {
         path: 'details/store-fulfillment',

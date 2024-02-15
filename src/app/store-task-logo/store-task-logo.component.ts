@@ -14,4 +14,8 @@ export class StoreTaskLogoComponent {
 
   @Input() storetask!: StoreTasks; 
 
+  constructor(){
+    
+  }
+
 }

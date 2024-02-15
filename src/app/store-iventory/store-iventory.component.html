@@ -1,0 +1,29 @@
+
+<div>
+<form #skuForm="ngForm" (ngSubmit)="onSubmit()">
+    
+    <input class="form-control mb-4 w-25" type="text" id="SKU" name="SKU" [(ngModel)]="SKU" placeholder="SKU" required >
+    <br>
+    
+    <input class="form-control mb-4 w-25" type="text" id="storeId" name="storeId" [(ngModel)]="storeId" placeholder="Store Id"  required >
+    <br>
+    <button type="submit" [disabled]="!skuForm.valid" class="btn btn-info col-2">Submit</button>
+</form>
+</div>
+<br>
+<div  *ngIf="invdtl_list.length>0">
+
+
+    <app-store-inventory-detail [invdtl_list]="invdtl_list"></app-store-inventory-detail>
+    <!-- <table >
+        <thead colspan="3">
+            <td>col1</td>
+            <td>col2</td>
+            <td>col3</td>
+        </thead>
+        <app-store-inventory-detail *ngFor="let invdtl of invdtl_list" [invdtl]="invdtl">
+        </app-store-inventory-detail>
+    </table>   -->
+
+</div>
+

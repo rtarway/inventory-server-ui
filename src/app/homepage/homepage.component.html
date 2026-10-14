@@ -1,12 +1,13 @@
 <!-- <section>
-    <form>
-        <input type="text" placeholder="Filter by name" #filter>
-        <button class="primary" type="button" (click)="filterResults(filter.value)">
-        Search
-        </button>
-      </form>
+<form>
+  <input type="text" placeholder="Filter by name" #filter>
+  <button class="primary" type="button" (click)="filterResults(filter.value)">
+    Search
+  </button>
+</form>
 </section> -->
 <div class="row text-center text-lg-start">
-    <app-store-task-logo *ngFor="let storetask of filteredStoreTaskList" [storetask]="storetask">
-    </app-store-task-logo> 
+  @for (storetask of filteredStoreTaskList; track storetask) {
+    <app-store-task-logo [storetask]="storetask"> </app-store-task-logo>
+  }
 </div>

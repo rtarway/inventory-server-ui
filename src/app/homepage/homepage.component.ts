@@ -5,14 +5,12 @@ import { StoreTasks } from '../store-tasks';
 import { StoreTasksService } from '../store-tasks.service';
 
 @Component({
-  selector: 'app-homepage',
-  standalone: true,
-  imports: [
-   
-    CommonModule,StoreTaskLogoComponent,
+    selector: 'app-homepage',
+    imports: [
+        CommonModule, StoreTaskLogoComponent,
     ],
-  templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.css'
+    templateUrl: './homepage.component.html',
+    styleUrl: './homepage.component.css'
 })
 
 

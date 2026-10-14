@@ -8,11 +8,10 @@ import { move_request_adhoc } from '../store-inventory';
 
 
 @Component({
-  selector: 'app-store-inventory-detail',
-  standalone: true,
-  imports: [CommonModule,StoreIventoryComponent],
-  templateUrl: './store-inventory-detail.component.html',
-  styleUrl: './store-inventory-detail.component.css'
+    selector: 'app-store-inventory-detail',
+    imports: [CommonModule, StoreIventoryComponent],
+    templateUrl: './store-inventory-detail.component.html',
+    styleUrl: './store-inventory-detail.component.css'
 })
 export class StoreInventoryDetailComponent {
 

@@ -7,11 +7,10 @@ import { StoreInventory } from '../store-inventory';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-store-iventory',
-  standalone: true,
-  imports: [CommonModule, FormsModule, StoreInventoryDetailComponent ],
-  templateUrl: './store-iventory.component.html',
-  styleUrl: './store-iventory.component.css'
+    selector: 'app-store-iventory',
+    imports: [CommonModule, FormsModule, StoreInventoryDetailComponent],
+    templateUrl: './store-iventory.component.html',
+    styleUrl: './store-iventory.component.css'
 })
 
 export class StoreIventoryComponent{
